@@ -1,11 +1,11 @@
-import Head from "next/head";
-import React from "react";
-import WithDefaultGlobalStyles from "./WithDefaultGlobalStyles";
+import Head from 'next/head'
+import React from 'react'
+import WithDefaultGlobalStyles from './WithDefaultGlobalStyles'
 
 type PageProps = {
-  title: string;
-  description: string;
-};
+  title: string
+  description: string
+}
 const Page: React.FC<PageProps> = ({ title, description, children }) => {
   return (
     <WithDefaultGlobalStyles>
@@ -16,7 +16,7 @@ const Page: React.FC<PageProps> = ({ title, description, children }) => {
       </Head>
       {children}
     </WithDefaultGlobalStyles>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

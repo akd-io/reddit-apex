@@ -1,5 +1,5 @@
-import { css, Global } from "@emotion/react";
-import React from "react";
+import { css, Global } from '@emotion/react'
+import React from 'react'
 
 const globalStyles = css`
   html,
@@ -24,7 +24,7 @@ const globalStyles = css`
   * {
     box-sizing: border-box;
   }
-`;
+`
 
 const WithDefaultGlobalStyles: React.FC = ({ children }) => {
   return (
@@ -32,7 +32,7 @@ const WithDefaultGlobalStyles: React.FC = ({ children }) => {
       <Global styles={globalStyles} />
       {children}
     </>
-  );
-};
+  )
+}
 
-export default WithDefaultGlobalStyles;
+export default WithDefaultGlobalStyles

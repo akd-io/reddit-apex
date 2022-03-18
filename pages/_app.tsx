@@ -1,6 +1,6 @@
-import { AppProps } from "next/app";
-import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
-import { chakraTheme } from "../chakra-theme";
+import { AppProps } from 'next/app'
+import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
+import { chakraTheme } from '../chakra-theme'
 
 const CustomApp = ({ Component, pageProps }: AppProps) => {
   return (
@@ -14,7 +14,7 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
         <Component {...pageProps} />
       </ColorModeProvider>
     </ChakraProvider>
-  );
-};
+  )
+}
 
-export default CustomApp;
+export default CustomApp
